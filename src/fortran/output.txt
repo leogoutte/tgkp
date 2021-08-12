@@ -1,0 +1,164 @@
+ You are using     1 CPU cores
+  
+  The system.in file should looks like:
+   &PARAMETERS 
+   number_layers = 2     
+  !twisted_index_m= 1      
+   twisted_angle_degree= 1.08   
+   twisted_angle_array_input = 0 1  
+   interlayercoupling_ratio_array= 1    
+   stacking_sequences_input = "A" "B"  
+   u_AA=0.0797  ! eV 
+   u_AB=0.0975  ! eV 
+   vppsigma=0.30d0  ! eV 
+   Qcutoff = 4
+   Electric_field= 0.1 ! eV/Angstrom
+   lattice_constant_c = 3.36 
+   / 
+   
+ >>>Read some paramters from system.in
+>> twisted angle:   5.05 degree
+>> twisted angle array:  0 1 1 1 1
+>> stacking_sequences:   A  B  A  B  C
+>> vf=  5817.000000 meV*Anstrom
+>> u_AA=     0.000000 meV
+>> u_AB=   110.000000 meV
+>> gamma_3=     0.000000 eV
+>> gamma_4=     0.000000 eV
+>> vppsigma=   480.000000 meV
+>> Qcutoff=      3
+>> Electric_field=    -0.001000
+>> lattice_constant_c=     3.360000
+  
+qb=   0.000000  0.150031
+length of qb=   0.150031
+  
+Lattice vectors of moire supercell: 
+    1.230000    2.130422
+   -1.230000    2.130422
+Reciprocal lattice vectors of moire supercell: 
+   -0.129931   -0.225047
+    0.259862    0.000000
+ Morie valley for Graphene K valley
+    0.129931   -0.075016
+    0.129931    0.075016
+ Morie valley for Graphene K' valley
+   -0.129931    0.075016
+   -0.129931   -0.075016
+Number of Q vectors Num_Qvectors=:         49
+Dimension of the Hamiltonian matrix Ndim=:        490
+We are calculating     40 bands close to E=0.
+  
+ We found KPATH_BULK card
+Number of K lines :     5
+Number of Kpoints per line :    20
+  
+ KPATH: 
+ M     0.000000  0.500000    K-    0.333333  0.666667
+ K-    0.333333  0.666667    G     0.000000  0.000000
+ G     0.000000  0.000000    M     0.000000  0.500000
+ M     0.000000  0.500000    K+   -0.333333  0.333333
+ K+   -0.333333  0.333333    G     0.000000  0.000000
+  
+ ik, knv3 :       1     100
+ ik, knv3 :       2     100
+ ik, knv3 :       3     100
+ ik, knv3 :       4     100
+ ik, knv3 :       5     100
+ ik, knv3 :       6     100
+ ik, knv3 :       7     100
+ ik, knv3 :       8     100
+ ik, knv3 :       9     100
+ ik, knv3 :      10     100
+ ik, knv3 :      11     100
+ ik, knv3 :      12     100
+ ik, knv3 :      13     100
+ ik, knv3 :      14     100
+ ik, knv3 :      15     100
+ ik, knv3 :      16     100
+ ik, knv3 :      17     100
+ ik, knv3 :      18     100
+ ik, knv3 :      19     100
+ ik, knv3 :      20     100
+ ik, knv3 :      21     100
+ ik, knv3 :      22     100
+ ik, knv3 :      23     100
+ ik, knv3 :      24     100
+ ik, knv3 :      25     100
+ ik, knv3 :      26     100
+ ik, knv3 :      27     100
+ ik, knv3 :      28     100
+ ik, knv3 :      29     100
+ ik, knv3 :      30     100
+ ik, knv3 :      31     100
+ ik, knv3 :      32     100
+ ik, knv3 :      33     100
+ ik, knv3 :      34     100
+ ik, knv3 :      35     100
+ ik, knv3 :      36     100
+ ik, knv3 :      37     100
+ ik, knv3 :      38     100
+ ik, knv3 :      39     100
+ ik, knv3 :      40     100
+ ik, knv3 :      41     100
+ ik, knv3 :      42     100
+ ik, knv3 :      43     100
+ ik, knv3 :      44     100
+ ik, knv3 :      45     100
+ ik, knv3 :      46     100
+ ik, knv3 :      47     100
+ ik, knv3 :      48     100
+ ik, knv3 :      49     100
+ ik, knv3 :      50     100
+ ik, knv3 :      51     100
+ ik, knv3 :      52     100
+ ik, knv3 :      53     100
+ ik, knv3 :      54     100
+ ik, knv3 :      55     100
+ ik, knv3 :      56     100
+ ik, knv3 :      57     100
+ ik, knv3 :      58     100
+ ik, knv3 :      59     100
+ ik, knv3 :      60     100
+ ik, knv3 :      61     100
+ ik, knv3 :      62     100
+ ik, knv3 :      63     100
+ ik, knv3 :      64     100
+ ik, knv3 :      65     100
+ ik, knv3 :      66     100
+ ik, knv3 :      67     100
+ ik, knv3 :      68     100
+ ik, knv3 :      69     100
+ ik, knv3 :      70     100
+ ik, knv3 :      71     100
+ ik, knv3 :      72     100
+ ik, knv3 :      73     100
+ ik, knv3 :      74     100
+ ik, knv3 :      75     100
+ ik, knv3 :      76     100
+ ik, knv3 :      77     100
+ ik, knv3 :      78     100
+ ik, knv3 :      79     100
+ ik, knv3 :      80     100
+ ik, knv3 :      81     100
+ ik, knv3 :      82     100
+ ik, knv3 :      83     100
+ ik, knv3 :      84     100
+ ik, knv3 :      85     100
+ ik, knv3 :      86     100
+ ik, knv3 :      87     100
+ ik, knv3 :      88     100
+ ik, knv3 :      89     100
+ ik, knv3 :      90     100
+ ik, knv3 :      91     100
+ ik, knv3 :      92     100
+ ik, knv3 :      93     100
+ ik, knv3 :      94     100
+ ik, knv3 :      95     100
+ ik, knv3 :      96     100
+ ik, knv3 :      97     100
+ ik, knv3 :      98     100
+ ik, knv3 :      99     100
+ ik, knv3 :     100     100
+ Congratulations! you finished the calculation.
+ See you next time :)

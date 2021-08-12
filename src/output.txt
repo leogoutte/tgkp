@@ -1,0 +1,564 @@
+ You are using     1 CPU cores
+  
+  The system.in file should looks like:
+   &PARAMETERS 
+   number_layers = 2     
+  !twisted_index_m= 1      
+   twisted_angle_degree= 1.08   
+   twisted_angle_array_input = 0 1  
+   interlayercoupling_ratio_array= 1    
+   stacking_sequences_input = "A" "B"  
+   u_AA=0.0797  ! eV 
+   u_AB=0.0975  ! eV 
+   vppsigma=0.30d0  ! eV 
+   Qcutoff = 4
+   Electric_field= 0.1 ! eV/Angstrom
+   lattice_constant_c = 3.36 
+   / 
+   
+ >>>Read some paramters from system.in
+>> twisted angle:   1.08 degree
+>> twisted angle array:  0 1
+>> stacking_sequences:   A  B
+>> vf=  5817.000000 meV*Anstrom
+>> u_AA=   110.700000 meV
+>> u_AB=   110.700000 meV
+>> gamma_3=     0.000000 eV
+>> gamma_4=     0.000000 eV
+>> vppsigma=   480.000000 meV
+>> Qcutoff=      3
+>> Electric_field=     0.000000
+>> lattice_constant_c=     3.360000
+  
+qb=   0.000000  0.032096
+length of qb=   0.032096
+  
+Lattice vectors of moire supercell: 
+    1.230000    2.130422
+   -1.230000    2.130422
+Reciprocal lattice vectors of moire supercell: 
+   -0.027796   -0.048144
+    0.055592    0.000000
+ Morie valley for Graphene K valley
+    0.027796   -0.016048
+    0.027796    0.016048
+ Morie valley for Graphene K' valley
+   -0.027796    0.016048
+   -0.027796   -0.016048
+Number of Q vectors Num_Qvectors=:         49
+Dimension of the Hamiltonian matrix Ndim=:        196
+We are calculating     20 bands close to E=0.
+  
+ We found KPATH_BULK card
+Number of K lines :     5
+Number of Kpoints per line :   100
+  
+ KPATH: 
+ M     0.000000  0.500000    K-    0.333333  0.666667
+ K-    0.333333  0.666667    G     0.000000  0.000000
+ G     0.000000  0.000000    M     0.000000  0.500000
+ M     0.000000  0.500000    K+   -0.333333  0.333333
+ K+   -0.333333  0.333333    G     0.000000  0.000000
+  
+ ik, knv3 :       1     500
+ ik, knv3 :       2     500
+ ik, knv3 :       3     500
+ ik, knv3 :       4     500
+ ik, knv3 :       5     500
+ ik, knv3 :       6     500
+ ik, knv3 :       7     500
+ ik, knv3 :       8     500
+ ik, knv3 :       9     500
+ ik, knv3 :      10     500
+ ik, knv3 :      11     500
+ ik, knv3 :      12     500
+ ik, knv3 :      13     500
+ ik, knv3 :      14     500
+ ik, knv3 :      15     500
+ ik, knv3 :      16     500
+ ik, knv3 :      17     500
+ ik, knv3 :      18     500
+ ik, knv3 :      19     500
+ ik, knv3 :      20     500
+ ik, knv3 :      21     500
+ ik, knv3 :      22     500
+ ik, knv3 :      23     500
+ ik, knv3 :      24     500
+ ik, knv3 :      25     500
+ ik, knv3 :      26     500
+ ik, knv3 :      27     500
+ ik, knv3 :      28     500
+ ik, knv3 :      29     500
+ ik, knv3 :      30     500
+ ik, knv3 :      31     500
+ ik, knv3 :      32     500
+ ik, knv3 :      33     500
+ ik, knv3 :      34     500
+ ik, knv3 :      35     500
+ ik, knv3 :      36     500
+ ik, knv3 :      37     500
+ ik, knv3 :      38     500
+ ik, knv3 :      39     500
+ ik, knv3 :      40     500
+ ik, knv3 :      41     500
+ ik, knv3 :      42     500
+ ik, knv3 :      43     500
+ ik, knv3 :      44     500
+ ik, knv3 :      45     500
+ ik, knv3 :      46     500
+ ik, knv3 :      47     500
+ ik, knv3 :      48     500
+ ik, knv3 :      49     500
+ ik, knv3 :      50     500
+ ik, knv3 :      51     500
+ ik, knv3 :      52     500
+ ik, knv3 :      53     500
+ ik, knv3 :      54     500
+ ik, knv3 :      55     500
+ ik, knv3 :      56     500
+ ik, knv3 :      57     500
+ ik, knv3 :      58     500
+ ik, knv3 :      59     500
+ ik, knv3 :      60     500
+ ik, knv3 :      61     500
+ ik, knv3 :      62     500
+ ik, knv3 :      63     500
+ ik, knv3 :      64     500
+ ik, knv3 :      65     500
+ ik, knv3 :      66     500
+ ik, knv3 :      67     500
+ ik, knv3 :      68     500
+ ik, knv3 :      69     500
+ ik, knv3 :      70     500
+ ik, knv3 :      71     500
+ ik, knv3 :      72     500
+ ik, knv3 :      73     500
+ ik, knv3 :      74     500
+ ik, knv3 :      75     500
+ ik, knv3 :      76     500
+ ik, knv3 :      77     500
+ ik, knv3 :      78     500
+ ik, knv3 :      79     500
+ ik, knv3 :      80     500
+ ik, knv3 :      81     500
+ ik, knv3 :      82     500
+ ik, knv3 :      83     500
+ ik, knv3 :      84     500
+ ik, knv3 :      85     500
+ ik, knv3 :      86     500
+ ik, knv3 :      87     500
+ ik, knv3 :      88     500
+ ik, knv3 :      89     500
+ ik, knv3 :      90     500
+ ik, knv3 :      91     500
+ ik, knv3 :      92     500
+ ik, knv3 :      93     500
+ ik, knv3 :      94     500
+ ik, knv3 :      95     500
+ ik, knv3 :      96     500
+ ik, knv3 :      97     500
+ ik, knv3 :      98     500
+ ik, knv3 :      99     500
+ ik, knv3 :     100     500
+ ik, knv3 :     101     500
+ ik, knv3 :     102     500
+ ik, knv3 :     103     500
+ ik, knv3 :     104     500
+ ik, knv3 :     105     500
+ ik, knv3 :     106     500
+ ik, knv3 :     107     500
+ ik, knv3 :     108     500
+ ik, knv3 :     109     500
+ ik, knv3 :     110     500
+ ik, knv3 :     111     500
+ ik, knv3 :     112     500
+ ik, knv3 :     113     500
+ ik, knv3 :     114     500
+ ik, knv3 :     115     500
+ ik, knv3 :     116     500
+ ik, knv3 :     117     500
+ ik, knv3 :     118     500
+ ik, knv3 :     119     500
+ ik, knv3 :     120     500
+ ik, knv3 :     121     500
+ ik, knv3 :     122     500
+ ik, knv3 :     123     500
+ ik, knv3 :     124     500
+ ik, knv3 :     125     500
+ ik, knv3 :     126     500
+ ik, knv3 :     127     500
+ ik, knv3 :     128     500
+ ik, knv3 :     129     500
+ ik, knv3 :     130     500
+ ik, knv3 :     131     500
+ ik, knv3 :     132     500
+ ik, knv3 :     133     500
+ ik, knv3 :     134     500
+ ik, knv3 :     135     500
+ ik, knv3 :     136     500
+ ik, knv3 :     137     500
+ ik, knv3 :     138     500
+ ik, knv3 :     139     500
+ ik, knv3 :     140     500
+ ik, knv3 :     141     500
+ ik, knv3 :     142     500
+ ik, knv3 :     143     500
+ ik, knv3 :     144     500
+ ik, knv3 :     145     500
+ ik, knv3 :     146     500
+ ik, knv3 :     147     500
+ ik, knv3 :     148     500
+ ik, knv3 :     149     500
+ ik, knv3 :     150     500
+ ik, knv3 :     151     500
+ ik, knv3 :     152     500
+ ik, knv3 :     153     500
+ ik, knv3 :     154     500
+ ik, knv3 :     155     500
+ ik, knv3 :     156     500
+ ik, knv3 :     157     500
+ ik, knv3 :     158     500
+ ik, knv3 :     159     500
+ ik, knv3 :     160     500
+ ik, knv3 :     161     500
+ ik, knv3 :     162     500
+ ik, knv3 :     163     500
+ ik, knv3 :     164     500
+ ik, knv3 :     165     500
+ ik, knv3 :     166     500
+ ik, knv3 :     167     500
+ ik, knv3 :     168     500
+ ik, knv3 :     169     500
+ ik, knv3 :     170     500
+ ik, knv3 :     171     500
+ ik, knv3 :     172     500
+ ik, knv3 :     173     500
+ ik, knv3 :     174     500
+ ik, knv3 :     175     500
+ ik, knv3 :     176     500
+ ik, knv3 :     177     500
+ ik, knv3 :     178     500
+ ik, knv3 :     179     500
+ ik, knv3 :     180     500
+ ik, knv3 :     181     500
+ ik, knv3 :     182     500
+ ik, knv3 :     183     500
+ ik, knv3 :     184     500
+ ik, knv3 :     185     500
+ ik, knv3 :     186     500
+ ik, knv3 :     187     500
+ ik, knv3 :     188     500
+ ik, knv3 :     189     500
+ ik, knv3 :     190     500
+ ik, knv3 :     191     500
+ ik, knv3 :     192     500
+ ik, knv3 :     193     500
+ ik, knv3 :     194     500
+ ik, knv3 :     195     500
+ ik, knv3 :     196     500
+ ik, knv3 :     197     500
+ ik, knv3 :     198     500
+ ik, knv3 :     199     500
+ ik, knv3 :     200     500
+ ik, knv3 :     201     500
+ ik, knv3 :     202     500
+ ik, knv3 :     203     500
+ ik, knv3 :     204     500
+ ik, knv3 :     205     500
+ ik, knv3 :     206     500
+ ik, knv3 :     207     500
+ ik, knv3 :     208     500
+ ik, knv3 :     209     500
+ ik, knv3 :     210     500
+ ik, knv3 :     211     500
+ ik, knv3 :     212     500
+ ik, knv3 :     213     500
+ ik, knv3 :     214     500
+ ik, knv3 :     215     500
+ ik, knv3 :     216     500
+ ik, knv3 :     217     500
+ ik, knv3 :     218     500
+ ik, knv3 :     219     500
+ ik, knv3 :     220     500
+ ik, knv3 :     221     500
+ ik, knv3 :     222     500
+ ik, knv3 :     223     500
+ ik, knv3 :     224     500
+ ik, knv3 :     225     500
+ ik, knv3 :     226     500
+ ik, knv3 :     227     500
+ ik, knv3 :     228     500
+ ik, knv3 :     229     500
+ ik, knv3 :     230     500
+ ik, knv3 :     231     500
+ ik, knv3 :     232     500
+ ik, knv3 :     233     500
+ ik, knv3 :     234     500
+ ik, knv3 :     235     500
+ ik, knv3 :     236     500
+ ik, knv3 :     237     500
+ ik, knv3 :     238     500
+ ik, knv3 :     239     500
+ ik, knv3 :     240     500
+ ik, knv3 :     241     500
+ ik, knv3 :     242     500
+ ik, knv3 :     243     500
+ ik, knv3 :     244     500
+ ik, knv3 :     245     500
+ ik, knv3 :     246     500
+ ik, knv3 :     247     500
+ ik, knv3 :     248     500
+ ik, knv3 :     249     500
+ ik, knv3 :     250     500
+ ik, knv3 :     251     500
+ ik, knv3 :     252     500
+ ik, knv3 :     253     500
+ ik, knv3 :     254     500
+ ik, knv3 :     255     500
+ ik, knv3 :     256     500
+ ik, knv3 :     257     500
+ ik, knv3 :     258     500
+ ik, knv3 :     259     500
+ ik, knv3 :     260     500
+ ik, knv3 :     261     500
+ ik, knv3 :     262     500
+ ik, knv3 :     263     500
+ ik, knv3 :     264     500
+ ik, knv3 :     265     500
+ ik, knv3 :     266     500
+ ik, knv3 :     267     500
+ ik, knv3 :     268     500
+ ik, knv3 :     269     500
+ ik, knv3 :     270     500
+ ik, knv3 :     271     500
+ ik, knv3 :     272     500
+ ik, knv3 :     273     500
+ ik, knv3 :     274     500
+ ik, knv3 :     275     500
+ ik, knv3 :     276     500
+ ik, knv3 :     277     500
+ ik, knv3 :     278     500
+ ik, knv3 :     279     500
+ ik, knv3 :     280     500
+ ik, knv3 :     281     500
+ ik, knv3 :     282     500
+ ik, knv3 :     283     500
+ ik, knv3 :     284     500
+ ik, knv3 :     285     500
+ ik, knv3 :     286     500
+ ik, knv3 :     287     500
+ ik, knv3 :     288     500
+ ik, knv3 :     289     500
+ ik, knv3 :     290     500
+ ik, knv3 :     291     500
+ ik, knv3 :     292     500
+ ik, knv3 :     293     500
+ ik, knv3 :     294     500
+ ik, knv3 :     295     500
+ ik, knv3 :     296     500
+ ik, knv3 :     297     500
+ ik, knv3 :     298     500
+ ik, knv3 :     299     500
+ ik, knv3 :     300     500
+ ik, knv3 :     301     500
+ ik, knv3 :     302     500
+ ik, knv3 :     303     500
+ ik, knv3 :     304     500
+ ik, knv3 :     305     500
+ ik, knv3 :     306     500
+ ik, knv3 :     307     500
+ ik, knv3 :     308     500
+ ik, knv3 :     309     500
+ ik, knv3 :     310     500
+ ik, knv3 :     311     500
+ ik, knv3 :     312     500
+ ik, knv3 :     313     500
+ ik, knv3 :     314     500
+ ik, knv3 :     315     500
+ ik, knv3 :     316     500
+ ik, knv3 :     317     500
+ ik, knv3 :     318     500
+ ik, knv3 :     319     500
+ ik, knv3 :     320     500
+ ik, knv3 :     321     500
+ ik, knv3 :     322     500
+ ik, knv3 :     323     500
+ ik, knv3 :     324     500
+ ik, knv3 :     325     500
+ ik, knv3 :     326     500
+ ik, knv3 :     327     500
+ ik, knv3 :     328     500
+ ik, knv3 :     329     500
+ ik, knv3 :     330     500
+ ik, knv3 :     331     500
+ ik, knv3 :     332     500
+ ik, knv3 :     333     500
+ ik, knv3 :     334     500
+ ik, knv3 :     335     500
+ ik, knv3 :     336     500
+ ik, knv3 :     337     500
+ ik, knv3 :     338     500
+ ik, knv3 :     339     500
+ ik, knv3 :     340     500
+ ik, knv3 :     341     500
+ ik, knv3 :     342     500
+ ik, knv3 :     343     500
+ ik, knv3 :     344     500
+ ik, knv3 :     345     500
+ ik, knv3 :     346     500
+ ik, knv3 :     347     500
+ ik, knv3 :     348     500
+ ik, knv3 :     349     500
+ ik, knv3 :     350     500
+ ik, knv3 :     351     500
+ ik, knv3 :     352     500
+ ik, knv3 :     353     500
+ ik, knv3 :     354     500
+ ik, knv3 :     355     500
+ ik, knv3 :     356     500
+ ik, knv3 :     357     500
+ ik, knv3 :     358     500
+ ik, knv3 :     359     500
+ ik, knv3 :     360     500
+ ik, knv3 :     361     500
+ ik, knv3 :     362     500
+ ik, knv3 :     363     500
+ ik, knv3 :     364     500
+ ik, knv3 :     365     500
+ ik, knv3 :     366     500
+ ik, knv3 :     367     500
+ ik, knv3 :     368     500
+ ik, knv3 :     369     500
+ ik, knv3 :     370     500
+ ik, knv3 :     371     500
+ ik, knv3 :     372     500
+ ik, knv3 :     373     500
+ ik, knv3 :     374     500
+ ik, knv3 :     375     500
+ ik, knv3 :     376     500
+ ik, knv3 :     377     500
+ ik, knv3 :     378     500
+ ik, knv3 :     379     500
+ ik, knv3 :     380     500
+ ik, knv3 :     381     500
+ ik, knv3 :     382     500
+ ik, knv3 :     383     500
+ ik, knv3 :     384     500
+ ik, knv3 :     385     500
+ ik, knv3 :     386     500
+ ik, knv3 :     387     500
+ ik, knv3 :     388     500
+ ik, knv3 :     389     500
+ ik, knv3 :     390     500
+ ik, knv3 :     391     500
+ ik, knv3 :     392     500
+ ik, knv3 :     393     500
+ ik, knv3 :     394     500
+ ik, knv3 :     395     500
+ ik, knv3 :     396     500
+ ik, knv3 :     397     500
+ ik, knv3 :     398     500
+ ik, knv3 :     399     500
+ ik, knv3 :     400     500
+ ik, knv3 :     401     500
+ ik, knv3 :     402     500
+ ik, knv3 :     403     500
+ ik, knv3 :     404     500
+ ik, knv3 :     405     500
+ ik, knv3 :     406     500
+ ik, knv3 :     407     500
+ ik, knv3 :     408     500
+ ik, knv3 :     409     500
+ ik, knv3 :     410     500
+ ik, knv3 :     411     500
+ ik, knv3 :     412     500
+ ik, knv3 :     413     500
+ ik, knv3 :     414     500
+ ik, knv3 :     415     500
+ ik, knv3 :     416     500
+ ik, knv3 :     417     500
+ ik, knv3 :     418     500
+ ik, knv3 :     419     500
+ ik, knv3 :     420     500
+ ik, knv3 :     421     500
+ ik, knv3 :     422     500
+ ik, knv3 :     423     500
+ ik, knv3 :     424     500
+ ik, knv3 :     425     500
+ ik, knv3 :     426     500
+ ik, knv3 :     427     500
+ ik, knv3 :     428     500
+ ik, knv3 :     429     500
+ ik, knv3 :     430     500
+ ik, knv3 :     431     500
+ ik, knv3 :     432     500
+ ik, knv3 :     433     500
+ ik, knv3 :     434     500
+ ik, knv3 :     435     500
+ ik, knv3 :     436     500
+ ik, knv3 :     437     500
+ ik, knv3 :     438     500
+ ik, knv3 :     439     500
+ ik, knv3 :     440     500
+ ik, knv3 :     441     500
+ ik, knv3 :     442     500
+ ik, knv3 :     443     500
+ ik, knv3 :     444     500
+ ik, knv3 :     445     500
+ ik, knv3 :     446     500
+ ik, knv3 :     447     500
+ ik, knv3 :     448     500
+ ik, knv3 :     449     500
+ ik, knv3 :     450     500
+ ik, knv3 :     451     500
+ ik, knv3 :     452     500
+ ik, knv3 :     453     500
+ ik, knv3 :     454     500
+ ik, knv3 :     455     500
+ ik, knv3 :     456     500
+ ik, knv3 :     457     500
+ ik, knv3 :     458     500
+ ik, knv3 :     459     500
+ ik, knv3 :     460     500
+ ik, knv3 :     461     500
+ ik, knv3 :     462     500
+ ik, knv3 :     463     500
+ ik, knv3 :     464     500
+ ik, knv3 :     465     500
+ ik, knv3 :     466     500
+ ik, knv3 :     467     500
+ ik, knv3 :     468     500
+ ik, knv3 :     469     500
+ ik, knv3 :     470     500
+ ik, knv3 :     471     500
+ ik, knv3 :     472     500
+ ik, knv3 :     473     500
+ ik, knv3 :     474     500
+ ik, knv3 :     475     500
+ ik, knv3 :     476     500
+ ik, knv3 :     477     500
+ ik, knv3 :     478     500
+ ik, knv3 :     479     500
+ ik, knv3 :     480     500
+ ik, knv3 :     481     500
+ ik, knv3 :     482     500
+ ik, knv3 :     483     500
+ ik, knv3 :     484     500
+ ik, knv3 :     485     500
+ ik, knv3 :     486     500
+ ik, knv3 :     487     500
+ ik, knv3 :     488     500
+ ik, knv3 :     489     500
+ ik, knv3 :     490     500
+ ik, knv3 :     491     500
+ ik, knv3 :     492     500
+ ik, knv3 :     493     500
+ ik, knv3 :     494     500
+ ik, knv3 :     495     500
+ ik, knv3 :     496     500
+ ik, knv3 :     497     500
+ ik, knv3 :     498     500
+ ik, knv3 :     499     500
+ ik, knv3 :     500     500
+ Congratulations! you finished the calculation.
+ See you next time :)
