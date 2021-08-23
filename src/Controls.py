@@ -7,7 +7,7 @@ import dash_html_components as html
 
 stacking_popover = [
     dbc.PopoverHeader("Stacking"),
-    dbc.PopoverBody("Set stacking configuration. A list of A, B, or C layers with the single twist denoted by '-'."),
+    dbc.PopoverBody("Set stacking configuration. A list of 'A', 'B', or 'C' layers with the single twist denoted by '-'."),
 ]
 
 theta_popover = [
@@ -32,7 +32,7 @@ efield_popover = [
 
 N_popover = [
     dbc.PopoverHeader("Truncation range"),
-    dbc.PopoverBody("Number of vectors in the Moiré zone which are considered for computation, i.e: size of Moiré zone."),
+    dbc.PopoverBody("Largest Moiré vectors considered for the computation, in units of a single Moiré vector. Size of Moiré zone."),
 ]
 
 bands_popover = [
@@ -163,7 +163,5 @@ Card = dbc.Card([
                 disabled=True)
         ),
     ]),
-
-    # dbc.Button("Update", id='submit-button-state', color='secondary', n_clicks=0),
 
 ], body=True, color='light')

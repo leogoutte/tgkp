@@ -96,33 +96,6 @@ def make_bands(ks,Es):
     Es=Es.reshape(-1,jump).T
     return ks,Es
 
-# normalized lorentzian for DOS calculation
-def lorentzian(x,x0,gam):
-    return gam/np.pi / ( gam**2 + ( x - x0 )**2)
-
-# DOS
-def DensityOfStates(E, lim):
-    """
-    DOS calculation from delta definition
-    """
-    # make energy 1d list
-    Es=E.reshape(-1)
-    # Es_sorted=np.sort(E,axis=1)
-
-    # energy precision
-    # width=np.min(np.array([Es_sorted[0,i+1]-Es_sorted[0,i] for i in range(len(Es_sorted[0,:])-1)]))
-    width=1e-1
-    size_energies=int(1e3)
-    energies=np.linspace(-lim,lim,num=size_energies)
-
-    DOS=np.zeros(size_energies,dtype='float')
-    for E0 in Es:
-        if E0>0:
-            delta=lorentzian(energies,E0,width)
-            delta_neg=lorentzian(energies,-E0,width)
-            DOS+=delta+delta_neg
-        
-    return energies, DOS
 
 def Figure(Ks,Es,KsP,EsP):
     """
@@ -162,28 +135,8 @@ def Figure(Ks,Es,KsP,EsP):
         legendgroup='b'),
         row=1, col=1)       
 
-    # DOS
-    # should be the same as DOS is symmetric under C2TR
-    # fig.add_trace(go.Scatter(x=DOS,y=eDOS,
-    #     fill='tozerox',
-    #     fillcolor='rgba(207, 0, 15, 0.4)',
-    #     marker=dict(size=1,color='rgba(207, 0, 15, 0.4)'),
-    #     name='K valley',
-    #     showlegend=False,
-    #     legendgroup='a'),
-    #     row=1, col=2)
-    # fig.add_trace(go.Scatter(x=DOS,y=eDOS,
-    #     fill='tozerox',
-    #     fillcolor='rgba(44, 130, 201, 0.4)',
-    #     marker=dict(size=1,color='rgba(44, 130, 201, 0.4)'),
-    #     name="K' valley",
-    #     showlegend=False,
-    #     legendgroup='b'),
-    #     row=1, col=2)
-
     # labels
     fig.update_yaxes(title_text="Energy [eV]", range=[-lim,lim], row=1, col=1)
-    fig.update_yaxes(range=[-lim, lim], row=1, col=2)
 
     a=np.max(Ks)/(3+np.sqrt(3)/2)
     fig.update_xaxes(title_text="Momentum [Moiré zone]", 
@@ -191,13 +144,12 @@ def Figure(Ks,Es,KsP,EsP):
     tickvals=[0,a/2,3/2*a,(3/2+np.sqrt(3)/2)*a,(2+np.sqrt(3)/2)*a,(3+np.sqrt(3)/2)*a],
     ticktext=["M","K","Γ","M","K'","Γ"],
     row=1, col=1)
-    # fig.update_xaxes(title_text="DOS [arb. units]", tickmode="array", row=1, col=2)
 
     # set layout
     fig.update_layout(height=750, 
-    width=900, 
+    width=700, 
     title={
-        'text':'Energy spectrum of TMG',
+        'text':'Bandstructure of Twisted Mixed Multilayer Graphene',
         'y':0.94,
         'x':0.5,
         'xanchor': 'center',
@@ -208,7 +160,6 @@ def Figure(Ks,Es,KsP,EsP):
         y=1.02,
         xanchor="right",
         x=1),
-    modebar_remove=['zoom','pan']
         )
 
     return fig
@@ -228,9 +179,6 @@ def MakeFigure():
     
     ks_clean,Es_clean=make_bands(ks,Es)
     ksprime_clean,Esprime_clean=make_bands(ksprime,Esprime)
-
-    # eDOS,DOS=DensityOfStates(Es_clean,np.max(np.abs(Es_clean)))
-    # eDOSprime,DOSprime=DensityOfStates(Esprime_clean,np.max(np.abs(Esprime_clean)))
     
     fig=Figure(ks_clean,Es_clean,ksprime_clean,Esprime_clean)
     

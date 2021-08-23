@@ -10,6 +10,7 @@ import Controls
 import Callbacks
 
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+app.title = "Twisted Mixed Multilayer Graphene: a Tunable K dot P Model Spectrum"
 
 ##################################################################
 ##################################################################
@@ -36,7 +37,7 @@ app.layout = dbc.Container(
 
         html.Hr(),
 
-        html.P(dcc.Markdown(children=""" Visualize the bandstructure and local density of states of twisted graphene systems with the parameters of your choice. 
+        html.P(dcc.Markdown(children=""" Visualize the bandstructure of twisted graphene systems with the parameters of your choice. 
         For more information, consult the [docs](https://drive.google.com/file/d/1sqLJiuZStn80H8EveU7L3jY2GtIRI03j/view?usp=sharing). """),
                     className="lead"),
 
@@ -53,7 +54,7 @@ app.layout = dbc.Container(
             [
                 dbc.Col(dcc.Markdown(children="""Questions? **[Send me an e-mail](mailto:leo.goutte@mail.mcgill.ca)** 
 
-Source code: [![](https://img.icons8.com/material-sharp/2x/github.png)](https://github.com/leogoutte/tgkp)
+Source code: [![](https://img.icons8.com/material-sharp/2x/github.png)](https://github.com/leogoutte/tmg)
 
 Made by: **Leo Goutte** and **QuanSheng Wu**
                 
