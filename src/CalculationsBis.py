@@ -58,7 +58,7 @@ def ReadWriteData(stacking,theta,tAA,tAB,ElectricField,N,bands):
     twist_input=twist_list.replace("[","").replace("]","").replace(","," ")
 
     # interlayer coupling input
-    intercoupling_ratio_list="{}".format(['1' for _ in range(layers)])
+    intercoupling_ratio_list="{}".format([1 for _ in range(layers)])
     intercoupling_ratio_input=intercoupling_ratio_list.replace(","," ").replace("[","").replace("]","")
     
     # open file

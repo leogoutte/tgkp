@@ -39,7 +39,7 @@ app.layout = dbc.Container(
 
         html.P(dcc.Markdown(children=""" Visualize the bandstructure of twisted graphene systems with the parameters of your choice. 
         For more information, consult the [docs](https://drive.google.com/file/d/1Y9lRb0_3BB3XxXh6lz3DgkL2reWMv5hD/view?usp=sharing). """),
-                    className="lead"),
+                    className="lead", style={'text-align':'center'}),
 
         # middle
         dbc.Row([
