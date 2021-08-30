@@ -56,6 +56,10 @@ def ReadWriteData(stacking,theta,tAA,tAB,ElectricField,N,bands):
     # twisted angle array input
     twist_list="{}".format([0 for _ in range(twist)]+[1 for _ in range(twist,layers+1)])
     twist_input=twist_list.replace("[","").replace("]","").replace(","," ")
+
+    # interlayer coupling input
+    intercoupling_ratio_list="{}".format(['1' for _ in range(layers)])
+    intercoupling_ratio_input=intercoupling_ratio_list.replace(","," ").replace("[","").replace("]","")
     
     # open file
     f = open("system-initial.in","r")
@@ -67,7 +71,7 @@ def ReadWriteData(stacking,theta,tAA,tAB,ElectricField,N,bands):
     Lines[1]="number_layers={}".format(layers) # number of layers
     Lines[2]="twisted_angle_degree={}".format(theta) # twist angle
     Lines[3]="twisted_angle_array_input={}".format(twist_input) # twisted layers, 0 and 1
-    Lines[4]="interlayercoupling_ratio_array_input = {}".format(twist_input) # not important
+    Lines[4]="interlayercoupling_ratio_array_input = {}".format(intercoupling_ratio_input) # all ones
     Lines[5]="stacking_sequences_input = {}".format(stacking_sequences) # type of stacking (A,B,C)
     Lines[6]="u_AA={}".format(tAA/1000) # in eV
     Lines[7]="u_AB={}".format(tAB/1000) # in eV
@@ -146,8 +150,8 @@ def Figure(Ks,Es,KsP,EsP):
     row=1, col=1)
 
     # set layout
-    fig.update_layout(height=750, 
-    width=700, 
+    fig.update_layout(autosize=True,
+    height=750, 
     title={
         'text':'Bandstructure of Twisted Mixed Multilayer Graphene',
         'y':0.94,
