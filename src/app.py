@@ -30,41 +30,46 @@ config = {
 ##################################################################
 # LAYOUT
 
+html.Script(src="iframeSizer.contentWindow.min.js")
+
 app.layout = dbc.Container(
     [
         # title
-        html.H1("Twisted Multilayer Graphene: a tunable KP model spectrum ", className="display-5", style={'text-align':'center'}),
-
-        html.Hr(),
+        html.H1("Twisted Multilayer Graphene", className="display-5", style={'text-align':'center'}),
+        html.H3("A Tunable KP Model Spectrum", className="display-5", style={'text-align':'center'}),
 
         html.P(dcc.Markdown(children=""" Visualize the bandstructure of twisted graphene systems with the parameters of your choice. 
         For more information, consult the [docs](https://drive.google.com/file/d/1Y9lRb0_3BB3XxXh6lz3DgkL2reWMv5hD/view?usp=sharing). """),
-                    className="lead", style={'text-align':'center'}),
+        className="lead", style={'text-align':'center'}),
+
+        html.Hr(),
 
         # middle
         dbc.Row([
             dbc.Col(Controls.Card, md=4),
-            dbc.Col(dcc.Graph(id="RawDataGraph", config=config),md=8),
+            dbc.Col(dbc.Card([dcc.Graph(id="RawDataGraph", config=config)], body=True),md=8),
         ], align="center"),
 
         html.Hr(),
         
         # footer
-        dbc.Row(
-            [
-                dbc.Col(dcc.Markdown(children="""Questions? **[Send me an e-mail](mailto:leo.goutte@mail.mcgill.ca)** 
+        dbc.Card([
+            dbc.Row(
+                [
+                    dbc.Col(dcc.Markdown(children="""Questions? **[Send me an e-mail](mailto:leo.goutte@mail.mcgill.ca)** 
 
 Source code: [![](https://img.icons8.com/material-sharp/2x/github.png)](https://github.com/leogoutte/tmg)
 
 Made by: **Leo Goutte** and **QuanSheng Wu**
                 
 For: **Condensed matter physicists in a hurry**"""), width=9),
-                dbc.Col(html.Div()),
-                dbc.Col(html.Img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Logo_EPFL.svg/1024px-Logo_EPFL.svg.png",width="111",height="32"), width=2),
-            ]
-        ),
-
+                    dbc.Col(html.Div()),
+                    dbc.Col(html.Img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Logo_EPFL.svg/1024px-Logo_EPFL.svg.png",width="111",height="32"), width=2),
+                ]
+            ),
+        ],body=True, color='light'),
         html.Hr(),
+        html.Div(className='data-iframe-height', style={'position': 'relative'}),
 
     ],
     fluid=True,
