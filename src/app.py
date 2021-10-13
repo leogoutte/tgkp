@@ -69,8 +69,7 @@ For: **Condensed matter physicists in a hurry**"""), width=9),
             ),
         ],body=True, color='light'),
         html.Hr(),
-        html.Div(className='data-iframe-height', style={'position': 'relative'}),
-
+        html.Div(**{'data-iframe-height':''}),
     ],
     fluid=True,
 )
