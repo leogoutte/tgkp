@@ -32,7 +32,7 @@ efield_popover = [
 
 N_popover = [
     dbc.PopoverHeader("Truncation range"),
-    dbc.PopoverBody("Largest Moiré vectors considered for the computation, in units of a single Moiré vector. Size of Moiré zone."),
+    dbc.PopoverBody("Largest moiré vectors considered for the computation, in units of a single Moiré vector."),
 ]
 
 bands_popover = [
@@ -44,7 +44,7 @@ bands_popover = [
 # CARD
 
 Card = dbc.Card([
-    html.H4("Physical parameters", className="card-title"),
+    html.H4("Model parameters", className="card-title"),
 
     dbc.FormGroup([
         dbc.Row([
@@ -60,7 +60,7 @@ Card = dbc.Card([
 
     dbc.FormGroup([
         dbc.Row([
-            dbc.Col(html.Div([dbc.Label("θ (°)", id="thetaLabel"), 
+            dbc.Col(html.Div([dbc.Label("Twist angle θ (°)", id="thetaLabel"), 
             dbc.Popover(theta_popover,id='thetahover',target='thetaLabel',trigger='hover')
             ]), md=8)], justify="between"),
         # un-comment for slider functionality
