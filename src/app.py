@@ -35,8 +35,7 @@ html.Script(src="iframeSizer.contentWindow.min.js")
 app.layout = dbc.Container(
     [
         # title
-        html.H1("Twisted Multilayer Graphene", className="display-5", style={'text-align':'center'}),
-        html.H3("A Tunable KP Model Spectrum", className="display-5", style={'text-align':'center'}),
+        html.H1("Band structure of twisted multilayer graphene in k.p model", className="display-5", style={'text-align':'center'}),
 
         html.P(dcc.Markdown(children=""" Visualize the bandstructure of twisted graphene systems with the parameters of your choice. 
         For more information, consult the [docs](https://drive.google.com/file/d/1Y9lRb0_3BB3XxXh6lz3DgkL2reWMv5hD/view?usp=sharing). """),
