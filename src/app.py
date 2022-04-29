@@ -59,7 +59,7 @@ app.layout = dbc.Container(
 
 Source code: [![](https://img.icons8.com/material-sharp/2x/github.png)](https://github.com/leogoutte/tmg)
 
-Made by: **Leo P. Goutte**, **Oleg Yazyev** and **QuanSheng Wu**
+Made by: **Leo P. Goutte**, **Oleg V. Yazyev** and **QuanSheng Wu**
                 
 For: **Condensed matter physicists in a hurry**"""), width=9),
                     dbc.Col(html.Div()),
