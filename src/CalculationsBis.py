@@ -140,10 +140,10 @@ def Figure(Ks,Es,KsP,EsP):
         row=1, col=1)       
 
     # labels
-    fig.update_yaxes(title_text="Energy [eV]", range=[-lim,lim], row=1, col=1)
+    fig.update_yaxes(title_text="Energy (eV)", range=[-lim,lim], row=1, col=1)
 
     a=np.max(Ks)/(3+np.sqrt(3)/2)
-    fig.update_xaxes(title_text="Momentum [Moiré zone]", 
+    fig.update_xaxes(title_text="Path in moiré Brillouin zone", 
     tickmode="array", 
     tickvals=[0,a/2,3/2*a,(3/2+np.sqrt(3)/2)*a,(2+np.sqrt(3)/2)*a,(3+np.sqrt(3)/2)*a],
     ticktext=["M","K","Γ","M","K'","Γ"],
@@ -153,7 +153,7 @@ def Figure(Ks,Es,KsP,EsP):
     fig.update_layout(autosize=True,
     height=750, 
     title={
-        'text':'Bandstructure of Twisted Mixed Multilayer Graphene',
+        'text':'Band structure of twisted multilayer graphene',
         'y':0.94,
         'x':0.5,
         'xanchor': 'center',
